@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'list_view_demo.dart';
 import 'login.dart';
 import 'network_image.dart';
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: LoginView(),
+    home: ListViewDemo(),
     );
   }
 }
