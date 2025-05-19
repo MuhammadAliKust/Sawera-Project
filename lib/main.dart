@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sawera_project/dynamic_list_view.dart';
+import 'package:sawera_project/page_view.dart';
 import 'package:sawera_project/single_selection_demo.dart';
 import 'list_view_demo.dart';
 import 'login.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: DynamicListView(),
+    home: PageViewDemo(),
     );
   }
 }
