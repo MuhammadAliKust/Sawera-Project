@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
 class GridViewDemo extends StatelessWidget {
-  const GridViewDemo({super.key});
+   GridViewDemo({super.key});
 
+
+  List<String> languageList = [
+    "Urdu",
+    "Punjabi",
+    "Pashto",
+    "Siraiki",
+    "Sindhi",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,6 +20,7 @@ class GridViewDemo extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12.0),
         child: GridView.builder(
+          itemCount: languageList.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 10,
@@ -25,7 +34,7 @@ class GridViewDemo extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10)),
                 child: Center(
                   child: Text(
-                    "Urdu",
+                    languageList[i],
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                 ),
