@@ -3,6 +3,7 @@ import 'package:sawera_project/dynamic_list_view.dart';
 import 'package:sawera_project/grid_view.dart';
 import 'package:sawera_project/page_view.dart';
 import 'package:sawera_project/single_selection_demo.dart';
+import 'bottom_bar.dart';
 import 'list_view_demo.dart';
 import 'login.dart';
 import 'multiple_selection_demo.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GridViewDemo(),
+      home: BottomBarDemo(),
     );
   }
 }
