@@ -6,6 +6,8 @@ import 'package:sawera_project/register.dart';
 import 'package:sawera_project/single_selection_demo.dart';
 import 'package:sawera_project/tabbar.dart';
 import 'bottom_bar.dart';
+import 'bottom_sheet.dart';
+import 'dialog_box.dart';
 import 'list_view_demo.dart';
 import 'login.dart';
 import 'multiple_selection_demo.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TabbarDemo(),
+      home: BottomSheetDemo(),
     );
   }
 }
